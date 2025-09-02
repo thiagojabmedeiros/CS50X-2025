@@ -25,6 +25,3 @@ elif 16 >= index >= 1:
     print(f"Grade {index: .0f}")
 else:
     print("Grade 16+")
-
-
- # python readability.py
