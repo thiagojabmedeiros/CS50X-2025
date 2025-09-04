@@ -1,2 +1,2 @@
 # CS50X-2025
-Computer Science introductory course 
+Computer Science introductory course from Harvard Online.
