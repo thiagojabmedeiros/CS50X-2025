@@ -1,0 +1,43 @@
+body
+{
+    text-align: center;
+    background: #242424;
+}
+.history
+{
+    color: #ff0000;
+}
+.academic
+{
+    color: #ff0000;
+}
+.personal
+{
+    color: #ff0000;
+}
+.index
+{
+    color: #ff0000;
+}
+.end
+{
+    text-align: left;
+    color: white;
+}
+.top
+{
+    background: white;
+    padding-right: 200px;
+    padding-left: 200px;
+}
+.button
+{
+    color: #ff0000;
+}
+.button:hover
+{
+    padding: 10px;
+    border-radius: 5px;
+    background: #ff0000;
+    color: white;
+}
