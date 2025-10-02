@@ -1,0 +1,39 @@
+{% extends "layout.html" %}
+
+{% block title %}History{% endblock %}
+
+{% block main %}
+  {% if history|length == 0 %}
+    <p>No transactions yet.</p>
+  {% else %}
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Type</th>
+          <th>Symbol</th>
+          <th>Shares</th>
+          <th>Price</th>
+          <th>Date & Time</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for t in history %}
+        <tr>
+          <td>{{ t.type }}</td>
+          <td>{{ t.symbol }}</td>
+          <td>{{ t.shares_abs }}</td>
+          <td>{{ t.price | usd }}</td>
+          <td>
+            {# Se transacted vier como string ISO, imprime direto; se vier como datetime, formata #}
+            {% if t.when.strftime is defined %}
+              {{ t.when.strftime("%Y-%m-%d %H:%M:%S") }}
+            {% else %}
+              {{ t.when }}
+            {% endif %}
+          </td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  {% endif %}
+{% endblock %}

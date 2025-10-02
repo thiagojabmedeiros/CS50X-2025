@@ -1,0 +1,54 @@
+sort1 uses: Bubble Sort
+
+How do you know?: lower times compiling random and reversed
+
+sort2 uses: Merge Sort
+
+How do you know?: Faster times compiling random and reversed
+
+sort3 uses: Selection Sort
+
+How do you know?: Average times compiling random and reversed
+
+
+
+//notes
+sort1 - random10000.txt (Lower)
+real time: 0.383
+user time: 0.137
+
+sort2 - random10000.txt (Faster)
+real time: 0.052
+user time: 0.009
+
+sort3 - random10000.txt (Average)
+real time: 0.166
+user time: 0.101
+
+
+//notes
+sort1 - reversed10000.txt (Lower)
+real time: 0.228
+user time: 0.178
+
+sort2 - reversed10000.txt (Faster)
+real time: 0.051
+user time: 0.006
+
+sort3 - reversed10000.txt (Average)
+real time: 0.128
+user time: 0.080
+
+
+//notes
+sort1 - sorted10000.txt (Lower)
+real time: 0.042
+user time: 0.10
+
+sort2 - sorted10000.txt (Faster)
+real time: 0.078
+user time: 0.008
+
+sort3 - sorted10000.txt (Average)
+real time: 0.127
+user time: 0.083
