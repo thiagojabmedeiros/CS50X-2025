@@ -9,7 +9,7 @@ width = 700
 heigth = 480
 
 # main character position
-character = pygame.image.load('Final Project - Help David!\sprites\spritesheet32px.png')
+character = pygame.image.load('sprites\spritesheet32px.png')
 b = 0
 x_sprite = 0
 y_sprite = 0
@@ -17,18 +17,18 @@ x = 555
 y = 150
 
 # objects
-cs50david = pygame.image.load('Final Project - Help David!\sprites\cs50davidmalan.png')
+cs50david = pygame.image.load('sprites\cs50davidmalan.png')
 xd = 515
 yd = 140
-stressball = pygame.image.load('Final Project - Help David!\sprites\stressball.png')
+stressball = pygame.image.load('sprites\stressball.png')
 xb = 630
 yb = 470
 stressballpickup = 0
-computer = pygame.image.load('Final Project - Help David!\sprites\computer.png')
+computer = pygame.image.load('sprites\computer.png')
 xc = 135
 yc = 295
 computerpickup = 0
-cs50duck = pygame.image.load('Final Project - Help David!\sprites\cs50duck.png')
+cs50duck = pygame.image.load('sprites\cs50duck.png')
 xcd = 140
 ycd = 510
 cs50duckpickup = 0
@@ -37,18 +37,18 @@ cs50duckpickup = 0
 sum = (cs50duckpickup + computerpickup + stressballpickup)
 
 # songs
-song = pygame.mixer.music.load('Final Project - Help David!\songs\Traverse_town_song_8bit.mp3')
+song = pygame.mixer.music.load('songs\Traverse_town_song_8bit.mp3')
 pygame.mixer.music.play(-1)
-picked_object = pygame.mixer.Sound('Final Project - Help David!\songs\picked_object.wav')
+picked_object = pygame.mixer.Sound('songs\picked_object.wav')
 
 # screen datas
 time = pygame.time.Clock()
 screen = pygame.display.set_mode((width, heigth))
-background = pygame.image.load('Final Project - Help David!\sprites\map.png')
-tree = pygame.image.load('Final Project - Help David!\sprites\Tree.png')
-flag = pygame.image.load('Final Project - Help David!\sprites\Flag.png')
-help = pygame.image.load('Final Project - Help David!\sprites\TextbarHelp.png')
-win = pygame.image.load('Final Project - Help David!\sprites\TextbarWin.png')
+background = pygame.image.load('sprites\map.png')
+tree = pygame.image.load('sprites\Tree.png')
+flag = pygame.image.load('sprites\Flag.png')
+help = pygame.image.load('sprites\TextbarHelp.png')
+win = pygame.image.load('sprites\TextbarWin.png')
 pygame.display.set_caption("CS50 Final Project - Help David!")
 
 # camera
